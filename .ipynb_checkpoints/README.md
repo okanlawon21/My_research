@@ -142,6 +142,153 @@ These templates can be expanded for any supervised ML problem—just plug in you
 
 ---
 
+
+
+
+# Machine Learning Analytics With scikit-learn Datasets on scikit_task.ipynb
+
+A collection of mini-projects using classic datasets from scikit-learn for regression and classification.  
+Each script demonstrates model training, hyperparameter tuning, metrics, and visualization.
+
+---
+
+## Objectives
+
+- Build regression and classification models using scikit-learn.
+- Evaluate model performance with common metrics.
+- Visualize predictions, errors, class distributions, and feature importances.
+- Use GridSearchCV for hyperparameter tuning.
+- Gain hands-on experience with real-world data analysis pipelines.
+
+---
+
+## Datasets Used
+
+- **Diabetes** (Regression, and Binned Classification)
+- **Boston Housing** (Regression)
+- **Wine** (Classification, 3 classes)
+- **Digits** (Classification, 10 classes, images)
+- **Breast Cancer Wisconsin** (Classification, 2 classes)
+
+---
+
+## Requirements
+
+- Python 3.7+
+- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- seaborn
+
+Install with:
+
+```bash
+pip install scikit-learn pandas numpy matplotlib seaborn
+```
+
+---
+
+## Code Summaries, Objectives and Results
+
+### 1. **Random Forest Classification on Binned Diabetes Scores**
+
+**Objective:**  
+- Bin diabetes score into 3 categories.
+- Classify patients using RandomForestClassifier.
+- Tune model via GridSearchCV.
+
+**Key Steps:**  
+- Data exploration and binning of targets.
+- Model training and hyperparameter tuning.
+- Evaluate with accuracy score, classification report, and confusion matrix.
+- Visualize class distributions and compare actual vs predicted.
+
+**Results:**  
+- Model classified diabetes progression into bins with measurable accuracy.
+- Clear confusion matrix and distribution plots for performance analysis.
+
+---
+
+### 2. **Random Forest Regression on Boston Housing**
+
+**Objective:**  
+- Predict house prices using regression.
+- Assess model fit and prediction error.
+
+**Key Steps:**  
+- Train/test split and RandomForestRegressor training.
+- Visualize actual vs predicted values and prediction distributions.
+- Print model metrics: R², MAE, MSE.
+
+**Results:**  
+- Achieved reasonable R² scores.
+- Visual scatterplot to check fit quality.
+- Histogram of predicted prices for further analysis.
+
+---
+
+### 3. **Random Forest Classification on Wine Data**
+
+**Objective:**  
+- Classify wine into one of three types.
+- Evaluate test accuracy and confusion matrix.
+
+**Key Steps:**  
+- Train RandomForestClassifier plus pipeline.
+- Visualize predicted class distribution and confusion matrix.
+
+**Results:**  
+- Demonstrated high accuracy.
+- Plots show how predictions distribute across wine classes.
+
+---
+
+### 4. **Random Forest and Logistic Regression on Digits Data**
+
+**Objective:**  
+- Classify handwritten digit images (0–9).
+- Explore feature importances and residuals.
+- Display grid-searched tuning results.
+- Show sample predicted images.
+
+**Key Steps:**  
+- Train RandomForestClassifier and tune with GridSearchCV.
+- Print best parameters and cross-validated accuracy.
+- Visualize feature importances and prediction residuals.
+- Display five random test digit images with predicted labels.
+
+**Results:**  
+- Showed strong classifier performance.
+- Heatmaps highlight influential features.
+- Sample plots of test images confirm class prediction visually.
+
+---
+
+### 5. **Random Forest Classification on Breast Cancer Data**
+
+**Objective:**  
+- Classify tumors as malignant or benign.
+- Tune Random Forest classifier and visualize confusion matrix.
+
+**Key Steps:**  
+- Train and grid-search best estimator.
+- Print best parameters, model metrics, confusion matrix.
+- Display confusion matrix heatmap for class separation.
+
+**Results:**  
+- High test accuracy.
+- Clear visual separation of true and predicted classes.
+
+---
+
+## Summary
+
+These scripts provide templates for supervised machine learning using popular datasets, including data exploration, modeling, hyperparameter tuning, and robust result visualization.  
+Use these as starting points for your own projects or data science practice.
+
+---
+
 ## Author
 
 Okanlawon Micheal Olatunji
