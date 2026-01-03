@@ -292,3 +292,91 @@ Use these as starting points for your own projects or data science practice.
 ## Author
 
 Okanlawon Micheal Olatunji
+
+
+
+
+## Code Summaries, Objectives and Results on scikit.ipynb
+
+---
+
+### 1. **Model Comparison: Breast Cancer Classification**
+
+**Objective:**  
+- Compare RandomForestClassifier, DecisionTreeClassifier, and SVC on the Breast Cancer dataset.
+- Evaluate model accuracy and F1 scores, and visualize confusion matrices.
+
+**Key Steps:**  
+- Trained three classifiers.
+- Evaluated each using accuracy and F1 score.
+- Plotted metrics comparison and confusion matrices.
+
+**Results:**  
+- All models achieved high accuracy, with Random Forest typically performing best.
+- Visualizations provided clear comparison among models.
+
+---
+
+### 2. **Cross-Validation Best Practices**
+
+**Objective:**  
+- Demonstrate stability and reliability of model performance using stratified 5-fold cross-validation, compared with a single train/test split.
+
+**Key Steps:**  
+- Calculated accuracy via a single train/test split.
+- Ran cross-validation for the same model.
+- Compared and plotted both results.
+
+**Results:**  
+- Cross-validation average accuracy closely matched the train/test result, indicating stable model generalization.
+- Visualization highlighted robustness over multiple splits.
+
+---
+
+### 3. **Feature Engineering: Diabetes Regression**
+
+**Objective:**  
+- Assess the impact of feature engineering on model performance for the Diabetes dataset.
+
+**Key Steps:**  
+- Trained a baseline RandomForestRegressor.
+- Created a new feature (`bmi` + `s5`).
+- Used SelectKBest for feature selection.
+- Compared model performance (R², MSE) with/without new features and after feature selection.
+
+**Results:**  
+- Feature engineering and selection modestly impacted performance.
+- Summary table compared metrics for all scenarios.
+
+---
+
+### 4. **Model Explainability**
+
+**Objective:**  
+- Interpret random forest model decisions using built-in feature importances.
+
+**Key Steps:**  
+- Trained RandomForestRegressor on Diabetes data.
+- Plotted feature importances as a horizontal bar chart.
+- Highlighted top influential features.
+
+**Results:**  
+- Features like `bmi` and `s5` were most impactful.
+- Visualization improved model transparency and interpretability.
+
+---
+
+## Summary
+
+Today’s scripts and notebooks demonstrate:
+- Multi-model comparison and evaluation best practices.
+- Cross-validation for robust model assessment.
+- Feature engineering and its measurable effects.
+- Model interpretability using feature importances.
+- Clean, documented, and reproducible project organization.
+
+---
+
+## Author
+
+Okanlawon Micheal Olatunji
